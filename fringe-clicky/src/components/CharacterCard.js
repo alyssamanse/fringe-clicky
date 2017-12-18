@@ -4,8 +4,8 @@
 import React from "react";
 
 const CharacterCard = props =>
-	<div className="thumbnail">
-		<img src={props.image} alt={props.character}>
+	<div className="thumbnail" id={props.id} onClick={props.handleClick}>
+		<img src={props.url} alt={props.id} width=200 height=200/>
 	</div>
 
 
